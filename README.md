@@ -6,20 +6,22 @@ Works with Vue 3 only!
 
 ### Usage:
 
-```
+```vue
 <script setup>
     import ImagesGrid from "vue-images-grid";
     import "vue-images-grid/dist/style.css";
+        
     let images = ref([
-    {
-    // Used as key
-    id: 0,
-    // Image src
-    src: "https://artemdev.com/c/wf",
-    // You can define your custom props. 
-    // You will get these image objects from events.
-    },
-    ...
+        {
+        // Used as key
+        id: 0,
+        // Image src
+        src: "https://artemdev.com/c/wf",
+        // You can define your custom props. 
+        // You will get these image objects from events.
+        },
+        //...
+    ])
 </script>
 
 <template>
@@ -37,24 +39,24 @@ Works with Vue 3 only!
 </template>
 ```
 In this example, the library decides which column to put pictures in. You can do it manually:
-```
+```vue
 <template>
     <ImagesGrid
-        :cols=[
-        [
-            {id: 0, src: "https://artemdev.com/c/wf"}
-        ], 
-        [
-            {id: 1, src: "https://artemdev.com/c/eU"}
-        ]
-        ]
+        :cols="[ 
+            [
+                {id: 0, src: "https://artemdev.com/c/wf"}
+            ], 
+            [
+                {id: 1, src: "https://artemdev.com/c/eU"}
+            ]
+        ]"
     />
 </template>
 ```
 The library creates responsive grid. It means, that if the width of the parent container becomes
 less than the width of the picture grid, the number of columns is reduced. If you don't want it,
 set the attribute "isResponsive" to false (default: true). If you use your "cols", the responsiveness will not work. 
-```
+```vue
 <template>
     <ImagesGrid
         :is-responsive="false"
@@ -65,7 +67,7 @@ set the attribute "isResponsive" to false (default: true). If you use your "cols
 #### Custom image component
 If you want to add some functionality to image component, you can use your custom component! 
 But "image-style" and image events won't work. 
-```
+```vue
 <template>
     <ImagesGrid
         :cols="3"

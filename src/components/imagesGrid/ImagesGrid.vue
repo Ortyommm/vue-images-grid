@@ -1,5 +1,5 @@
 <template>
-  <div class="vig-images-grid-container" ref="container">
+  <div class="images-grid-container" ref="container">
     <div v-for="(col, i) in cols" :style="{ marginRight: i !== cols - 1 ? colSpaces : '0' }" ref="columnsRef">
       <template v-for="image in colsData[i]">
         <slot name="image" v-if="$slots.image" :image="image" />
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, PropType, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { ColData, imagesGridProps } from './types'
 import ImageItem from './ImageItem.vue'
 
@@ -82,12 +82,10 @@ onMounted(() => {
 onUnmounted(() => {
   if (isResponsive) window.removeEventListener('resize', onResize)
 })
-
 </script>
 
-<style>
-.vig-images-grid-container {
+<style scoped>
+.images-grid-container {
   display: flex;
-  /*flex-wrap: wrap;*/
 }
 </style>
