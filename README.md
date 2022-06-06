@@ -2,7 +2,7 @@
 Library for easy gallery creation.<br>
 Works with Vue 3 only!
 
-![How it looks](./images/example1.png)
+![How it looks](https://raw.githubusercontent.com/Ortyommm/vue-images-grid/master/images/example1.png)
 
 ###Usage:
 
@@ -82,4 +82,4 @@ If you want to add some functionality to image component, you can use your custo
   </ImagesGrid>
 </template>
 ```
-![Custom image component](./images/example2.png)
+![Custom image component](https://raw.githubusercontent.com/Ortyommm/vue-images-grid/master/images/example2.png)
