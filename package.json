@@ -12,7 +12,12 @@
       "require": "./dist/vue-ig.umd.js"
     }
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "keywords": [
+    "vue",
+    "image gallery",
+    "image grid"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
