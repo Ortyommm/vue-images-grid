@@ -4,7 +4,7 @@ Works with Vue 3 only!
 
 ![How it looks](https://raw.githubusercontent.com/Ortyommm/vue-images-grid/master/images/example1.png)
 
-###Usage:
+### Usage:
 
 ```
 <script setup>
@@ -53,7 +53,7 @@ In this example, the library decides which column to put pictures in. You can do
 ```
 The library creates responsive grid. It means, that if the width of the parent container becomes
 less than the width of the picture grid, the number of columns is reduced. If you don't want it,
-set the attribute "isResponsive" to false (default: true).
+set the attribute "isResponsive" to false (default: true). If you use your "cols", the responsiveness will not work. 
 ```
 <template>
     <ImagesGrid
@@ -63,7 +63,8 @@ set the attribute "isResponsive" to false (default: true).
 ```
 
 #### Custom image component
-If you want to add some functionality to image component, you can use your custom component!
+If you want to add some functionality to image component, you can use your custom component! 
+But "image-style" and image events won't work. 
 ```
 <template>
     <ImagesGrid
