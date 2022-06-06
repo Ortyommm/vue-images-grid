@@ -5,7 +5,6 @@
         <slot name="image" v-if="$slots.image" :image="image" />
         <ImageItem
           v-else
-          v-for="image in colsData[i]"
           :style="imageStyle"
           :image="image"
           :object-fit="objectFit"
