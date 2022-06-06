@@ -1,5 +1,5 @@
 <template>
-  <div class="images-grid-container" ref="container">
+  <div class="vig-images-grid-container" ref="container">
     <div v-for="(col, i) in cols" :style="{ marginRight: i !== cols - 1 ? colSpaces : '0' }" ref="columnsRef">
       <template v-for="image in colsData[i]">
         <slot name="image" v-if="$slots.image" :image="image" />
@@ -85,8 +85,8 @@ onUnmounted(() => {
 
 </script>
 
-<style scoped>
-.images-grid-container {
+<style>
+.vig-images-grid-container {
   display: flex;
   /*flex-wrap: wrap;*/
 }

@@ -11,10 +11,10 @@
       "require": "./dist/vue-ig.umd.js"
     }
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "prepublish": "npm run build"
   },
