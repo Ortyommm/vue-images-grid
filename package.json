@@ -7,8 +7,8 @@
   "module": "./dist/vue-images-grid.es.js",
   "exports": {
     ".": {
-      "import": "./dist/vue-images-grid.es.js",
-      "require": "./dist/vue-images-grid.umd.js"
+      "import": "./dist/vue-ig.es.js",
+      "require": "./dist/vue-ig.umd.js"
     }
   },
   "version": "0.0.1",

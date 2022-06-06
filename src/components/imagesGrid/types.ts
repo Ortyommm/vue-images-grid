@@ -7,25 +7,25 @@ export interface Image {
   [prop: string]: any
 }
 
-export type ObjectFit = 'fill' | 'cover' | 'none' | 'scale-own' | 'contain'
+export type ObjectFit = 'fill' | 'cover' | 'none' | 'scale-down' | 'contain'
 
 export type ColData = Image[][]
 
-export type ImagesGridPropsUnion =
-  | {
-      cols: number
-      images: Image[]
-      imageStyle: CSSStyleDeclaration
-      objectFit?: ObjectFit
-      colSpaces: string
-    }
-  | {
-      cols: ColData
-      images: undefined
-      imageStyle: CSSStyleDeclaration
-      objectFit?: ObjectFit
-      colSpaces: string
-    }
+// export type ImagesGridPropsUnion =
+//   | {
+//       cols: number
+//       images: Image[]
+//       imageStyle: CSSStyleDeclaration
+//       objectFit?: ObjectFit
+//       colSpaces: string
+//     }
+//   | {
+//       cols: ColData
+//       images: undefined
+//       imageStyle: CSSStyleDeclaration
+//       objectFit?: ObjectFit
+//       colSpaces: string
+//     }
 
 // export interface ImagesGridProps {
 //   cols: number | ColData
@@ -53,7 +53,7 @@ export const imagesGridProps = {
     default: () => [],
   },
   imageStyle: {
-    type: [Object, String] as PropType<CSSStyleDeclaration | string>,
+    type: [Object, String] as PropType<Partial<CSSStyleDeclaration> | string>,
     required: false,
   },
   objectFit: {
