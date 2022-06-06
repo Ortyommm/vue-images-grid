@@ -8,7 +8,7 @@ Works with Vue 3 only!
 
 ```
 <script setup>
-    import ImagesGrid from "./components/imagesGrid/ImagesGrid.vue";
+    import ImagesGrid from "vue-images-grid";
     let images = ref([
     {
     // Used as key

@@ -3,8 +3,8 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/vue-images-grid.umd.js",
-  "module": "./dist/vue-images-grid.es.js",
+  "main": "./dist/vue-ig.umd.js",
+  "module": "./dist/vue-ig.es.js",
   "exports": {
     ".": {
       "import": "./dist/vue-ig.es.js",
