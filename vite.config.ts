@@ -24,14 +24,6 @@ export default defineConfig((config) => {
         },
       },
     },
-    module: {
-      rules: [
-        {
-          test: /\.css$/,
-          use: ['style-loader', 'css-loader'],
-        },
-      ],
-    },
     plugins: [vue(), VueTypeImports()],
   }
 })

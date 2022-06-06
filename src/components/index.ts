@@ -1,3 +1,3 @@
-import ImagesGrid from "./imagesGrid/ImagesGrid.vue";
+import ImagesGrid from './imagesGrid/ImagesGrid.vue'
 
-export default ImagesGrid;
+export default ImagesGrid

@@ -6,12 +6,13 @@
   "main": "./dist/vue-ig.umd.js",
   "module": "./dist/vue-ig.es.js",
   "exports": {
+    "./dist/style.css": "./dist/style.css",
     ".": {
       "import": "./dist/vue-ig.es.js",
       "require": "./dist/vue-ig.umd.js"
     }
   },
-  "version": "0.0.5",
+  "version": "0.0.7",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
