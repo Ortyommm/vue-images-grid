@@ -12,12 +12,16 @@
       "require": "./dist/vue-ig.umd.js"
     }
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "vue",
     "image gallery",
     "image grid"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ortyommm/vue-images-grid"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
